@@ -11,6 +11,7 @@
 | `WS_PATH` | مسیر WebSocket | `/tuic-ws` |
 | `ARGO_TOKEN` | توکن Cloudflare Tunnel | اختیاری |
 
+```json
 {
   "TUIC_UUID": "7f3e8a1b-4c2d-4e5f-9a8b-1c2d3e4f5a6b",
   "TUIC_PASSWORD": "MyStr0ngP@ssw0rd!2026_Random123",
@@ -52,3 +53,6 @@
     }
   ]
 }
+
+
+
