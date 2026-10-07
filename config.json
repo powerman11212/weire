@@ -1,0 +1,35 @@
+{
+    "log": {
+        "level": "info"
+    },
+    "inbounds": [
+        {
+            "type": "tuic",
+            "tag": "tuic-in",
+            "listen": "0.0.0.0",
+            "listen_port": 8443,
+            "users": [
+                {
+                    "uuid": "00000000-0000-0000-0000-000000000000",
+                    "password": "change-me"
+                }
+            ],
+            "congestion_control": "bbr",
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "alpn": [
+                    "h3"
+                ],
+                "certificate_path": "/etc/sing-box/cert.pem",
+                "key_path": "/etc/sing-box/key.pem"
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "type": "direct",
+            "tag": "direct"
+        }
+    ]
+}
